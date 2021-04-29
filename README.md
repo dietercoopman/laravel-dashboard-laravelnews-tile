@@ -2,7 +2,10 @@
     <img src="https://github.com/dietercoopman/assets/blob/master/laravelnews-tile.png" width="500" title="LLoadout logo">
 </p>
 
-![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)](https://packagist.org/packages/dietercoopman/laravel-dashboard-laravelnews-tile)
+
+[![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)]
+(https://packagist.org/packages/dietercoopman/laravel-dashboard-laravelnews-tile)
 
 # laravel-dashboard-laravelnews-tile
 
