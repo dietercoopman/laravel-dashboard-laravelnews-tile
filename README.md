@@ -1,3 +1,7 @@
+<p align="center">
+    <img src="https://github.com/dietercoopman/assets/blob/master/laravelnews-tile.png" width="500" title="LLoadout logo">
+</p>
+
 ![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)
 
 # laravel-dashboard-laravelnews-tile
