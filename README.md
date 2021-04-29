@@ -4,8 +4,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)](https://packagist.org/packages/dietercoopman/laravel-dashboard-laravelnews-tile)
 
-[![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)]
-(https://packagist.org/packages/dietercoopman/laravel-dashboard-laravelnews-tile)
+[Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)
 
 # laravel-dashboard-laravelnews-tile
 
