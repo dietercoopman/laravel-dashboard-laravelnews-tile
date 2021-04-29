@@ -1,3 +1,5 @@
+![Downloads](https://img.shields.io/packagist/dt/dietercoopman/laravel-dashboard-laravelnews-tile.svg?style=flat-square)
+
 # laravel-dashboard-laravelnews-tile
 
 A Laravel News tile for the Spatie Dashboard. This tile will show you the Latest Laravel news articles on your Spatie Dashboard
