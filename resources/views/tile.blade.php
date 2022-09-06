@@ -19,6 +19,7 @@
     }
     #qrcode{
         position: absolute;
+        background-color: white;
         bottom: 5px;
         left: 5px;
         width: 15%;
