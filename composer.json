@@ -5,7 +5,7 @@
         "dietercoopman",
         "laravel-dashboard-laravelnews-tile"
     ],
-    "homepage": "",
+    "homepage": "https://www.dietse.dev",
     "license": "MIT",
     "authors": [
         {
@@ -17,9 +17,10 @@
     ],
     "require": {
         "php": "^8.0|^7.4",
-        "mtownsend/xml-to-array" : "^2.0",
-        "spatie/laravel-dashboard": "^2.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "chillerlan/php-qrcode": "^4.3",
+        "mtownsend/xml-to-array": "^2.0",
+        "spatie/laravel-dashboard": "^2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.3"

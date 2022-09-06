@@ -2,6 +2,7 @@
 
 namespace DieterCoopman\LaravelNewsTile;
 
+use chillerlan\QRCode\QRCode;
 use Livewire\Component;
 
 class LaravelNewsTileComponent extends Component
@@ -26,7 +27,7 @@ class LaravelNewsTileComponent extends Component
 
         $this->title = $title;
 
-        $this->refreshIntervalInSeconds = config('dashboard.tiles.laravelnews.refresh_interval_in_seconds',60);
+        $this->refreshIntervalInSeconds = config('dashboard.tiles.laravelnews.refresh_interval_in_seconds', 60);
 
         $this->configurationName = $configurationName;
     }
@@ -37,14 +38,17 @@ class LaravelNewsTileComponent extends Component
         $xml   = \Illuminate\Support\Facades\Http::get("https://feed.laravel-news.com")->body();
         $array = \Mtownsend\XmlToArray\XmlToArray::convert($xml, false);
 
-        if ($this->number == config('dashboard.tiles.laravelnews.number_of_articles',19)-1) {
+        if ($this->number == config('dashboard.tiles.laravelnews.number_of_articles', 19) - 1) {
             $this->number = 0;
         } else {
             $this->number++;
         }
 
-        $articleContent =  \Illuminate\Support\Arr::get($array, 'channel.item.' . $this->number . '.description');
+        $articleContent = \Illuminate\Support\Arr::get($array, 'channel.item.' . $this->number . '.description');
         $articleTitle   = \Illuminate\Support\Arr::get($array, 'channel.item.' . $this->number . '.title');
-        return view('dashboard-laravelnews-tile::tile', compact('articleContent', 'articleTitle'));
+        $articleUrl     = \Illuminate\Support\Arr::get($array, 'channel.item.' . $this->number . '.link');
+        $articleQrCode  = ((new QRCode)->render($articleUrl));
+
+        return view('dashboard-laravelnews-tile::tile', compact('articleContent', 'articleTitle', 'articleQrCode'));
     }
 }
